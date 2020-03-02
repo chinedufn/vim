@@ -16,3 +16,9 @@
 [submodule ".vim/pack/vendor/start/vim-gitgutter"]
 	path = .vim/pack/vendor/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/pack/vendor/start/rust.vim"]
+	path = .vim/pack/vendor/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
+[submodule ".vim/pack/vendor/start/tagbar"]
+	path = .vim/pack/vendor/start/tagbar
+	url = https://github.com/majutsushi/tagbar
