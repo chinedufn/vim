@@ -3,16 +3,16 @@
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule ".vim/pack/vendor/start/fugitive"]
 	path = .vim/pack/vendor/start/fugitive
-	url = https://tpope.io/vim/fugitive.git
+	url = https://github.com/tpope/vim-fugitive
 [submodule ".vim/pack/vendor/start/nerdtree"]
 	path = .vim/pack/vendor/start/nerdtree
 	url = https://github.com/preservim/nerdtree
 [submodule ".vim/pack/vendor/start/surround"]
 	path = .vim/pack/vendor/start/surround
-	url = https://tpope.io/vim/surround.git
+	url = https://github.com/tpope/vim-surround
 [submodule ".vim/pack/vendor/start/vim-commentary"]
 	path = .vim/pack/vendor/start/vim-commentary
-	url = https://tpope.io/vim/commentary.git
+	url = https://github.com/tpope/vim-commentary
 [submodule ".vim/pack/vendor/start/vim-gitgutter"]
 	path = .vim/pack/vendor/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
