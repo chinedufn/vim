@@ -106,6 +106,9 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 " Ctrl + E to toggle sidebar
 map <C-e> :NERDTreeToggle<CR>
 
+" , + e to open sidebar to current file
+map <leader>e :NERDTreeFind<CR>
+
 " Open NERDTree automatically when vim starts up on opening a directory
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
