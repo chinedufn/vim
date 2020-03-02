@@ -1,14 +1,12 @@
 # chinedufn/vim
 
-Meant for my personal use.
+This repository is meant for my personal use and as such is not well documented.
 
 ```sh
 git clone --recurse-submodules -j8 git@github.com:chinedufn/vim.git
 cd vim
 vim -u ./
 ```
-
-Setting as default
 
 ```sh
 # Bash profile
