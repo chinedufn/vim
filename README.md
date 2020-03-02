@@ -4,7 +4,9 @@ This repository is meant for my personal use and as such is not well documented.
 
 ```sh
 git clone --recurse-submodules -j8 git@github.com:chinedufn/vim.git
-cd vim
+ln -s ./vim ~/.chinedufn-vim
+
+cd ./vim
 vim -u ./
 ```
 
