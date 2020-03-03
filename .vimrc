@@ -20,6 +20,7 @@ let mapleader=","
 " https://nvie.com/posts/how-i-boosted-my-vim/
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
+
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
@@ -36,7 +37,6 @@ set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 
 set history=1000         " remember more commands and search history
-set undolevels=1000      " use many muchos levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 
@@ -47,6 +47,13 @@ set belloff=all   " Prevent the screen from flashing
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set clipboard^=unnamed
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Persistent undo
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set undofile
+set undodir=./.vim/undodir
+set undolevels=1000
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Splits
