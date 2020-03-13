@@ -11,6 +11,11 @@ set nocompatible
 set hidden
 
 """""""""""""""""""""""""""""""""""""""""""""""""
+" Working dir as current file
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set autochdir
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader Key
 """"""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader=","
@@ -52,7 +57,7 @@ set clipboard^=unnamed
 " Persistent undo
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set undofile
-set undodir=./.vim/undodir
+set undodir=~/.chinedufn-vim/.vim/undodir
 set undolevels=1000
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
