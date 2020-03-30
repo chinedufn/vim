@@ -1,4 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vi Compatibility
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -109,6 +109,20 @@ let g:ctrlp_working_path_mode = 'ra'
 " Ignore .gitignore'd files
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-easymotion
+" https://github.com/easymotion/vim-easymotion
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable default mappings
+let g:EasyMotion_do_mapping = 0
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-overwin-f2)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
@@ -127,6 +141,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Show dot files
+let NERDTreeShowHidden=1
 
 " File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
@@ -161,8 +178,8 @@ let g:rustfmt_autosave = 1
 " TagBar
 " https://github.com/majutsushi/tagbar
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" Press s to toggle sidebar
-map s :TagbarToggle<CR>
+" Press ,s to toggle sidebar
+nmap <leader>s :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " CoC
