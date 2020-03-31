@@ -25,3 +25,6 @@
 [submodule ".vim/pack/vendor/start/vim-easymotion"]
 	path = .vim/pack/vendor/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion
+[submodule ".vim/pack/vendor/start/vim-rhubarb"]
+	path = .vim/pack/vendor/start/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb
