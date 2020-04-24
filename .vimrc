@@ -5,6 +5,11 @@
 " Remove vi compatibility so that more things work as expected.
 set nocompatible
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Load Packages
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set packpath=~/.chinedufn-vim/.vim
+
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Preserve undo buffers
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -20,11 +25,15 @@ set autochdir
 """"""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader=","
 
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Color Scheme
+""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme gruvbox
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Basic text editing
 " https://nvie.com/posts/how-i-boosted-my-vim/
 """"""""""""""""""""""""""""""""""""""""""""""""""
-
 
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
@@ -51,7 +60,6 @@ set belloff=all   " Prevent the screen from flashing
 " Copy yanked text to clipboard
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set clipboard^=unnamed
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Persistent undo
@@ -90,11 +98,6 @@ filetype plugin on
 " Syntax Highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
-
-""""""""""""""""""""""""""""""""""""""""""""""""""
-" Packages
-""""""""""""""""""""""""""""""""""""""""""""""""""
-set packpath=~/.chinedufn-vim/.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Ctrl-P
@@ -254,3 +257,4 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 let g:coc_user_config = {
   \ "coc.preferences.formatOnSaveFiletypes": ["rust"]
 \ }
+
