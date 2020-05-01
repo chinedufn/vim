@@ -170,7 +170,7 @@ call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" Rust.vim
+" Rust
 " https://github.com/rust-lang/rust.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -249,6 +249,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Remap keys for applying codeAction to the current line.
 nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>i  <Plug>(coc-codeaction)
 
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
