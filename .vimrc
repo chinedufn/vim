@@ -172,10 +172,14 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Rust
 " https://github.com/rust-lang/rust.vim
+" https://github.com/fannheyward/coc-rust-analyzer
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " Automatic rustfmt on save
 let g:rustfmt_autosave = 1
+nmap <leader>u :CocCommand rust-analyzer.parentModule<CR>
+" TODO: Use runSingle - doesn't appear to work as of May 2020
+nmap <leader>r :CocCommand rust-analyzer.run<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " TagBar
