@@ -62,6 +62,12 @@ set belloff=all   " Prevent the screen from flashing
 set clipboard^=unnamed
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" Tab completion of files
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set wildmode=longest,list,full
+set wildmenu
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Persistent undo
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set undofile
