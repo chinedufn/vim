@@ -58,6 +58,7 @@ set belloff=all   " Prevent the screen from flashing
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Copy yanked text to clipboard
+"  (Vim must be installed with +clipboard support)
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set clipboard^=unnamed
 
