@@ -63,6 +63,11 @@ set belloff=all   " Prevent the screen from flashing
 set clipboard^=unnamed
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" Spellcheck
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set spell spelllang=en_us
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tab completion of files
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set wildmode=longest,list,full
@@ -118,6 +123,11 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " Ignore .gitignore'd files
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Execute current buffer
+""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>r :!%:p
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " vim-easymotion
@@ -185,8 +195,6 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 " Automatic rustfmt on save
 let g:rustfmt_autosave = 1
 nmap <leader>u :CocCommand rust-analyzer.parentModule<CR>
-" TODO: Use runSingle - doesn't appear to work as of May 2020
-nmap <leader>r :CocCommand rust-analyzer.run<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " TagBar
@@ -270,3 +278,9 @@ let g:coc_user_config = {
   \ "coc.preferences.formatOnSaveFiletypes": ["rust"]
 \ }
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-easy-align
+" https://github.com/junegunn/vim-easy-align
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Align markdown table by pressing "|"
+au FileType markdown map <Bar> vip :EasyAlign*<Bar><Enter>
