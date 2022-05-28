@@ -40,7 +40,6 @@ set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
-set number        " always show line numbers
 set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set showmatch     " set show matching parenthesis
@@ -55,6 +54,24 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 
 set belloff=all   " Prevent the screen from flashing
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Line Numbers
+" https://jeffkreeftmeijer.com/vim-number/
+"
+"   - Line number and relative line numbers in normal mode
+"   - Line numbers in insert mode
+"   - Line numbers when buffer is not focused
+" 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set number
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Copy yanked text to clipboard
