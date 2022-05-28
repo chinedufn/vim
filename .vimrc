@@ -211,7 +211,10 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " Automatic rustfmt on save
 let g:rustfmt_autosave = 1
+" Go to parent module
 nmap <leader>u :CocCommand rust-analyzer.parentModule<CR>
+" Run runnables such as tests or main
+nmap <leader>c :CocCommand rust-analyzer.run<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " TagBar
