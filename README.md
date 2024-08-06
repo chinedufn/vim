@@ -1,10 +1,16 @@
 # chinedufn/vim
 
-This repository is meant for my personal use and as such is not well documented.
+This repository is designed for my personal use.
+
+```sh
+# coc.nvim uses node.js
+# if node.js is not already installed
+https://nodejs.org/en/download/package-manager
+```
 
 ```sh
 git clone --recurse-submodules -j8 git@github.com:chinedufn/vim.git
-ln -s ./vim ~/.chinedufn-vim
+ln -s "$(pwd)/vim" ~/.chinedufn-vim
 
 cd ./vim
 
@@ -14,11 +20,19 @@ $(cd ./.vim/pack/vendor/start && curl --fail -L https://github.com/neoclide/coc.
 # Install rust-analyzer
 vim -c ":CocInstall coc-rust-analyzer" -c "1" -c "q"
 
-vim -u ./
+# Open vim to confirm that it works without errors
+vim -u ./.vimrc
 ```
 
 ```sh
 # Bash profile
 
-vim="vim -u /path/to/chinedufn/vim"
+vim="vim -u ~/.chinedufn-vim/.vimrc"
+```
+
+## Installing new plugins
+
+```sh
+cd .vim/pack/vendor/start
+git submodule add REPOSITORY
 ```
