@@ -26,10 +26,11 @@ vim -u ./.vimrc
 ```
 
 ```sh
-# Bash profile
-
-vim="vim -u ~/.chinedufn-vim/.vimrc"
+# Inside bash profile
+alias vim="vim -u ~/.chinedufn-vim/.vimrc"
 ```
+
+Then in the terminal run `source ~/.bash_profile`
 
 ## Installing new plugins
 
