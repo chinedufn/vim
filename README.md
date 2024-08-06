@@ -9,10 +9,11 @@ https://nodejs.org/en/download/package-manager
 ```
 
 ```sh
-git clone --recurse-submodules -j8 git@github.com:chinedufn/vim.git
+git clone git@github.com:chinedufn/vim.git
 ln -s "$(pwd)/vim" ~/.chinedufn-vim
 
 cd ./vim
+git submodule update --init --recursive
 
 # Install CoC
 $(cd ./.vim/pack/vendor/start && curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz | tar xzfv -)
