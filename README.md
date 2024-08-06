@@ -26,7 +26,7 @@ vim -u ./.vimrc
 ```
 
 ```sh
-# Inside bash profile
+# Inside .zshrc
 alias vim="vim -u ~/.chinedufn-vim/.vimrc"
 ```
 
