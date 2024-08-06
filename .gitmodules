@@ -30,7 +30,7 @@
 	url = https://github.com/tpope/vim-rhubarb
 [submodule ".vim/pack/vendor/start/auto-pairs"]
 	path = .vim/pack/vendor/start/auto-pairs
-	url = git://github.com/jiangmiao/auto-pairs.git
+	url = https://github.com/jiangmiao/auto-pairs.git
 [submodule ".vim/pack/vendor/start/gruvbox"]
 	path = .vim/pack/vendor/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git

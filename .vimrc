@@ -28,7 +28,9 @@ let mapleader=","
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Color Scheme
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" https://github.com/morhetz/gruvbox
 colorscheme gruvbox
+set background=dark
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Basic text editing
