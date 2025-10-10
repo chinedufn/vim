@@ -10,6 +10,12 @@ set nocompatible
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set packpath=~/.chinedufn-vim/.vim
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pretend to runtime path
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set runtimepath^=~/.chinedufn-vim/.vim
+set runtimepath^=~/.chinedufn-vim/.vim/after
+
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Preserve undo buffers
 """"""""""""""""""""""""""""""""""""""""""""""""""
